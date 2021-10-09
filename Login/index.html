@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="shortcut icon" href="img/LOGO.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" class="icon-profile">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Montez|Pathway+Gothic+One" rel="stylesheet">
+  </head>
+  <body>
+    <div class="contenedor">
+
+      <header>
+        <img src="img/CD.png" alt="escudo" width = 80px height = 80px>
+        <h1 class="title">¡BIENVENIDO!</h1>
+        <a href="../index.html">Inicio</a>
+        <a href="../Registrar/index.html">Registrate</a>
+      </header>
+      <div class="login">
+        <article class="fondo">
+          <img src="img/user.png" alt="User">
+          <h3>Inicio de Sesión</h3>
+
+          <form class="" action="index.html" method="post">
+            <span class="icon-user"></span><input class="inp" type="email" name="email" placeholder = "Ingrese el usuario o el correo" value=""><br>
+            <span class="icon-key2"></span><input class="inp" type="password" name="password" placeholder = "Ingrese la contraseña" value=""><br>
+            <a href="" class="he">¿Olvidaste la contraseña?</a>
+            <input class="boton" type="submit" name="inicio" value="Iniciar Sesión">
+          </form>
+          <?php
+            include("registrar.php");
+          ?>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
